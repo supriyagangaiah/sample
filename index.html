@@ -32,12 +32,18 @@
     <body>
 	
 	<h1>PhoneGap</h1>
-	<button id="ext-link" href="#">Google it</button>
+	<a class="appopen" onClick="OpenLink();">Sign in</a>
     
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+			
+			
+			
+			function OpenLink(){
+    window.open("http://www.google.com/", "_system");
+}
         </script>
     </body>
 </html>
